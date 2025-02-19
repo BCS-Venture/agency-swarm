@@ -357,7 +357,7 @@ class Agency:
 
         with gr.Blocks(js=js, css=custom_css) as demo:
             chatbot_queue = queue.Queue()
-            chatbot = gr.Chatbot()
+            chatbot = gr.Chatbot(height=None)
             with gr.Row():
                 with gr.Column(scale=9):
                     dropdown = gr.Dropdown(
